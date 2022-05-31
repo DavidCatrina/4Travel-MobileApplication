@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstDestinationMD">
+
+
+    <ImageView
+        android:id="@+id/header_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="background_image_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/image_one"
+        android:adjustViewBounds="true"
+        tools:targetApi="lollipop"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fd_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/open_sans_extra_bold"
+                android:text="London: The UK's All-in-One Destination"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:shadowColor="#000000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/fd_rating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/ratingStar"
+                    android:rating="4.5"/>
+
+                <TextView
+                    android:id="@+id/fd_ratingno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="4.7"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:id="@+id/fd_rating_voteno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="(300)"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fd_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="About"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/fd_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:paddingBottom="80dp"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="While it's possible to plan a trip to the UK without visiting London, it's certainly not to be advised.
+The nation's sprawling capital boasts plenty of attractions to keep you busy and beautiful resorts and hotels to make you comfortable..
+For those interested in learning more about the UK's rich history, one of the top things to do in London is visit the Tower of London.
+Located beside the spectacular Tower Bridge on the banks of the River Thames, this former palace and prison includes highlights such as
+the iconic 1,000-year-old White Tower, with its fascinating displays of armor and weaponry, and the Jewel House, home to the Crown Jewels.
+Fans of Britain's Royal Family will want to head to Buckingham Palace, London's Royal home since Queen Victoria's reign. Here, you can enjoy
+the colorful pomp of the Changing of the Guard or even take a tour of the Palace's State Rooms (be sure to book in advance as they're only open
+for a few weeks each year).The city's Whitehall Road area is another must, where you'll find Big Ben and the Parliament Buildings, as well as Westminster Abbey,
+scene of many a royal wedding. Another area to visit in London is South Kensington, home to the city's best museums, including the Victoria and Albert Museum and
+the Natural History Museum, as well as the famous Harrods department store. Also check out Trafalgar Square, home to iconicNelson's Column and
+the National Portrait Gallery."
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

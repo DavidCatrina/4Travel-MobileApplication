@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondDestinationMD">
+
+
+    <ImageView
+        android:id="@+id/header_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="background_image_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/image_two"
+        android:adjustViewBounds="true"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sd_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/open_sans_extra_bold"
+                android:text="Liverpool: Home of The Beatles"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:shadowColor="#000000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/sd_rating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/ratingStar"
+                    android:rating="4.0"/>
+
+                <TextView
+                    android:id="@+id/sd_ratingno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="4.0"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:id="@+id/sd_rating_voteno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="(71)"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sd_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="About"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/sd_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:paddingBottom="80dp"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Liverpool, under three hours away from London by rail, offers plenty of cultural excitement for the curious traveler. It's also well-known for its role in giving rise to the English music legacy, not least because of its association with the Beatles.
+Music fans are drawn here first and foremost for 'Fab Four'-related attractions, such as The Beatles Story located in the renovated Albert Docks area. Also worth seeing are the famous Cavern Club, where the band made its debut in 1961, as well as the former homes of John Lennon and Paul McCartney. Numerous walking tours and bus tours of Beatles sites are also readily available.
+Other great reasons to visit Liverpool include its many historic buildings, lovely gardens, and parks, as well as great museums such as the Merseyside Maritime Museum, the Museum of Liverpool, and world-class art galleries like the Walker Art Gallery and the Tate Gallery."
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

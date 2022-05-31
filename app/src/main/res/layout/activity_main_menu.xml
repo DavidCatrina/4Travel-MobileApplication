@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="#EDFBFD"
+    tools:context=".MainMenuActivity">
+
+    <TextView
+        android:id="@+id/mainmenulogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="4Travel"
+        android:textAlignment="center"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/txtmainmenutitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainmenulogo"
+        android:layout_marginTop="30dp"
+        android:text="Search for attraction around you"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/btnsearch"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtmainmenutitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="#0C5959"
+        android:gravity="center"
+        android:minHeight="50dp"
+        app:cornerRadius="10dp"
+        android:contentDescription="Search Button"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/btncalendar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#0C5959"
+        android:gravity="center"
+        android:minHeight="50dp"
+        app:cornerRadius="10dp"
+        android:contentDescription="Calendar Button"
+        app:srcCompat="@android:drawable/ic_menu_today" />
+
+    <ImageButton
+        android:id="@+id/btnsettings"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btncalendar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#0C5959"
+        android:contentDescription="Profile Button"
+        android:gravity="center"
+        android:minHeight="50dp"
+        app:cornerRadius="10dp"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+
+</RelativeLayout>
